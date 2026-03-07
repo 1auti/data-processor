@@ -18,3 +18,7 @@ class BaseConsumer(ABC, Generic[T]):
         Inicia el ciclo de consumo y ejecuta el handler por cada mensaje consumido
         """
         pass
+
+    @abstractmethod
+    def stop(self)->None:
+        pass
